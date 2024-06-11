@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./../images/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Rustrasporti</title>
+
+    <script src="funzioneData.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container text-bg-dark p-2 justify-content-between">
+            <div class="row">
+                <div class="col">
+                    <img id="logo" src="/images/logo.jpg" title="Il nostro logo">
+                </div>
+                <div class="col p-3">
+                    <a href="#home"
+                        class="link-light link-underline-dark">
+                        Home
+                    </a>
+                </div>
+                <div class="col p-3">
+                    <a href="#servizi"
+                        class="link-light link-underline-dark">
+                        Servizi
+                    </a>
+                </div>
+                <div class="col p-3">
+                    <a href="#contatti"
+                        class="link-light link-underline-dark">
+                        Contatti
+                    </a>
+                </div>
+                <div class="col p-3">
+                    <a href="#preventivo"
+                        class="link-light link-underline-dark">
+                        Richiedi un preventivo
+                    </a>
+                </div>
+                <div class="col p-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle bg-primary"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </button>
+                    <div class="dropdown-menu">
+                        <form class="px-4 py-3" action="/login" method="post">
+                            <div class="form-group">
+                                <label for="usernameLogin">Username</label>
+                                <input type="text" class="form-control" id="usernameLogin" name="username"
+                                    placeholder="Username" autocomplete="off" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordLogin">Password</label>
+                                <input type="password" class="form-control" id="passwordLogin" name="password"
+                                    placeholder="Password" required>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Entra</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <br>
+        <!-- HOME -->
+        <div id="home" class="container">
+            <div class="container text-center">
+                <h2> Benvenuti a Rustrasporti S.p.a. </h2>
+                <p> La Vostra Soluzione di Trasporto Affidabile e Versatile </p>
+            </div>
+            <div>
+                Se state cercando un partner di fiducia per soddisfare le vostre esigenze di trasporto su strada,
+                siete nel posto giusto. Rustrasporti S.p.a. è leader nel settore del trasporto su strada,
+                specializzato nel trasporto conto terzi di merci di vario genere, garantendo efficienza, puntualità e
+                sicurezza in ogni trasporto.
+            </div>
+        </div>
+
+        <br>
+
+        <div id="carouselExampleCaptions" class="container carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="/images/cisterna.jpg" class="d-block w-100" alt="Trasporto ADR">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Trasporto ADR</h5>
+                        <p>Da oltre 40 anni</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/images/frigo.jpg" class="d-block w-100" alt="Trasporto ATP">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Trasporto ATP</h5>
+                        <p>Da oltre 50 anni</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/images/centinato.jpg" class="d-block w-100" alt="Trasporto centinato">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Trasporto centinato</h5>
+                        <p>Da oltre 70 anni</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br><br>
+        <!-- SERVIZI -->
+        <div id="servizi">
+            <div>
+                <div class="container ">
+                    <div>
+                        <h2>
+                            I nostri <span>Servizi</span>
+                        </h2>
+                        <p>
+                            Rustrasporti S.p.a. si occupa anche dei trasporti intermodali in tutte le sue forme:
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div>
+                                <div>
+                                    <img src="/images/s1.png" alt="" style="height: 100px; width: 100px;">
+                                </div>
+                                <div>
+                                    <h5>
+                                        Via aria
+                                    </h5>
+                                    <p>
+                                        Con partner di fiducia Cargolux Italia da oltre 18 anni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div>
+                                <div>
+                                    <img src="/images/s2.png" alt="" style="height: 100px; width: 150px;">
+                                </div>
+                                <div>
+                                    <h5>
+                                        Via mare
+                                    </h5>
+                                    <p>
+                                        Con partner di fiducia SMC da oltre 20 anni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div>
+                                <div class="img-box">
+                                    <img src="/images/s3.png" alt="" style="height: 100px; width: 200px;">
+                                </div>
+                                <div>
+                                    <h5>
+                                        Via terra
+                                    </h5>
+                                    <p>
+                                        Con partner Poste Italiane S.p.a.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div>
+                                <div>
+                                    <img src="/images/s4.png" alt="" style="height: 100px; width: 70px;">
+                                </div>
+                                <div>
+                                    <h5>
+                                        Via ferrovie
+                                    </h5>
+                                    <p>
+                                        Con partner di fiducia D.B. Group da oltre 25 anni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--PREVENTIVO DI TRASPORTO-->
+        <div id="preventivo" class="container">
+            <form action="/submit" method="post">
+                <fieldset>
+                    <h2><legend>Richiedi un preventivo di trasporto</legend></h2>
+                    <p>
+                        <label for="partenza"> Luogo di partenza: </label>
+                        <input type="text" id="partenza" name="partenza" placeholder="Inserire luogo di partenza"
+                            required>
+                    </p>
+                    <p>
+                        <label for="data"> Data di partenza: </label>
+                        <input type="datetime-local" id="data" name="data" required>
+                    </p>
+                    <p>
+                        <label for="arrivo"> Luogo di arrivo: </label>
+                        <input type="text" id="arrivo" name="arrivo" placeholder="Inserire luogo di arrivo" required>
+                    </p>
+                    <p>
+                        <span> Tipo di trasporto: </span>
+                        <label for="adr"><input type="radio" id="adr" name="trasporto" value="adr" checked> ADR </label>
+                        <label for="atp"><input type="radio" id="atp" name="trasporto" value="atp"> ATP </label>
+                        <label for="centinato"><input type="radio" id="centinato" name="trasporto" value="centinato">
+                            Centinato </label>
+                    </p>
+                    <p>
+                        <label for="quantita"> Quantità da trasportare? (in tonnellate) </label>
+                        <input type="number" id="quantita" name="quantita" min="1" value="1" maxlength="3" required>
+                    </p>
+                    <p>
+                        <label for="email"> Email: </label>
+                        <input type="email" id="email" name="email" placeholder="email di contatto" autocomplete="off" required>
+                    </p>
+                    <p>
+                        <label for="telefono"> Telefono\Cellulare: </label>
+                        <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="1234567890"
+                            required>
+                    </p>
+                    <p>
+                        <button type="submit" class="btn btn-outline-primary"> Invia </button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <br><br>
+        <!-- FAQ -->
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+            </div>
+
+            <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-10">
+
+                    <div class="accordion accordion-flush" id="faqlist">
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-1" aria-expanded="false">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    
+                                    Quali tipi di merci trasportate?
+                                </button>
+                            </h3>
+                            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Trasportiamo una vasta gamma di merci, tra cui merci secche, refrigerate, pericolose e altro ancora. 
+                                    La nostra flotta e i nostri semirimorchi specializzati ci consentono di adattarci alle esigenze specifiche dei nostri clienti.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-2" aria-expanded="false">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Quali aree geografiche coprite con i vostri servizi di trasporto?
+                                </button>
+                            </h3>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Copriamo una vasta area geografica, offrendo servizi di trasporto su strada su tutto
+                                    il territorio nazionale
+                                    e anche a livello internazionale, a seconda delle necessità dei nostri clienti.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-3" aria-expanded="false">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Come garantite la sicurezza delle merci durante il trasporto?
+                                </button>
+                            </h3>
+                            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    La sicurezza delle merci è la nostra massima priorità. Seguiamo rigorosamente tutte
+                                    le normative
+                                    e le procedure di sicurezza pertinenti e utilizziamo tecnologie avanzate per
+                                    monitorare costantemente i nostri veicoli
+                                    e le nostre spedizioni.
+                                    Inoltre, i nostri autisti sono altamente qualificati e formati per gestire le merci
+                                    in modo sicuro durante tutto il viaggio.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-4" aria-expanded="false">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Quali sono i tempi di consegna medi per le vostre spedizioni?
+                                </button>
+                            </h3>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    I tempi di consegna dipendono dalla distanza, dalle condizioni del traffico e dalle
+                                    eventuali formalità doganali
+                                    (nel caso di spedizioni internazionali). Tuttavia, ci impegniamo a garantire
+                                    consegne tempestive
+                                    e faremo del nostro meglio per rispettare i tempi di consegna concordati con i
+                                    nostri clienti.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-5" aria-expanded="false">
+                                    <i class="bi bi-question-circle question-icon"></i>
+                                    Quali sono le vostre politiche di risarcimento in caso di danni o perdite durante il
+                                    trasporto?
+                                </button>
+                            </h3>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Faremo tutto il possibile per garantire che le vostre merci arrivino a destinazione
+                                    in condizioni perfette.
+                                    Tuttavia, nel caso in cui si verifichi un danno o una perdita durante il trasporto,
+                                    vi preghiamo di contattarci immediatamente. Saremo lieti di collaborare con voi per
+                                    risolvere la situazione nel modo più rapido ed equo possibile,
+                                    seguendo le nostre politiche interne e le normative vigenti in materia di
+                                    risarcimento.
+                                    La vostra soddisfazione è la nostra priorità e faremo tutto il possibile per
+                                    risolvere qualsiasi problema che possa sorgere durante il trasporto delle vostre
+                                    merci.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </main>
+
+    <footer id="contatti">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4> Info </h4>
+                    <a href="https://maps.app.goo.gl/D4amGZ8m4JRHy9nk6" target="_blank"
+                        class="link-light link-underline-dark">
+                        <img src="/images/location.png" style="width: 20px;height: 20px;">
+                        Via Venezia, 30 - Parma (PR)
+                    </a>
+                    <span> <img src="/images/telephone.png" style="width: 20px;height: 20px;"> 0521 282930 </span>
+                    <a href="mailto:rustransporti@gmail.com" title="Contattaci per email"
+                        class="link-light link-underline-dark">
+                        <img src="/images/mail.png" style="width: 20px;height: 20px;">
+                        rustransporti@gmail.com
+                    </a>
+                    <p>&copy; 2024 Rustrasporti. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

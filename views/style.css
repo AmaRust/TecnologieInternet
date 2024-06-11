@@ -1,0 +1,34 @@
+/* Stili CSS */
+#h1 {
+    padding: 1% 0% 0% 1%;
+    color: white;
+}
+
+#logo {
+    border-radius: 15%;
+    height: 60px;
+    width: 100px;
+}
+
+#login2 {
+    border-radius: 15%;
+    height: 50px;
+    width: 40px;
+}
+
+.carousel .carousel-item img {
+    height: 560px;
+}
+
+.carousel .carousel-item .carousel-caption {
+    height: 100px;
+    width: 240px;
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
